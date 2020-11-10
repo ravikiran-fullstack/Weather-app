@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Day 3</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Assignment Day 3</h1>
+    </div>
+  </header>
+
+  <section>
+    <div class="buttonsTab">
+      <div class="buttonDiv" id="resumeBtn">
+        Show Resume
+      </div>
+      <div class="buttonDiv" id="showWeatherBtn">
+        Show Weather
+      </div>
+    </div>
+  </section>
+
+  <section id="resumeSection">
+    <div class="resumeStyle">
+      <h3>My Resume</h3>
+    </div>
+  </section>
+
+  <section id="weatherSection">
+    <div class="weatherAppStyle">
+      <h3>Todays Weather</h3>
+      <div class="weatherData">
+        <div>
+          <div>
+            <label for="cityNameInput">City Name</label>
+            <input type="text" id="cityNameInput">
+          </div>
+          <button onclick="getWeatherDataByName()">get weather Data</button>
+          <div class="weatherReport" id="weatherByName">
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <label for="cityIdInput">City Id</label>
+            <input type="text" id="cityIdInput">
+          </div>
+          <input type="button" value="get weather Data" onclick="getWeatherDataById()">
+          <div class="weatherReport" id="weatherById">
+
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <div style="display: inline-block;">
+              <label for="cityLatitude">Latitude</label>
+              <input type="text" id="cityLatitude">              
+            </div>
+            <div style="display: inline-block;">
+              <label for="cityLongitude">Longitude</label>
+              <input type="text" id="cityLongitude">
+            </div>
+          </div>
+          <input type="button" value="get weather Data" onclick="getWeatherDataByLatLong()">
+          <div class="weatherReport" id="weatherReportByLatLong">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="weather.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -35,14 +35,14 @@
 
   <section id="weatherSection">
     <div class="weatherAppStyle">
-      <h3>Todays Weather</h3>
+      <h3>Today's Weather</h3>
       <div class="weatherData">
         <div>
           <div>
             <label for="cityNameInput">City Name</label>
             <input type="text" id="cityNameInput">
+            <button onclick="getWeatherDataByName()">get weather Data</button>
           </div>
-          <button onclick="getWeatherDataByName()">get weather Data</button>
           <div class="weatherReport" id="weatherByName">
           </div>
         </div>
@@ -51,8 +51,8 @@
           <div>
             <label for="cityIdInput">City Id</label>
             <input type="text" id="cityIdInput">
+            <button onclick="getWeatherDataById()">get weather Data</button>
           </div>
-          <input type="button" value="get weather Data" onclick="getWeatherDataById()">
           <div class="weatherReport" id="weatherById">
 
           </div>
@@ -68,8 +68,8 @@
               <label for="cityLongitude">Longitude</label>
               <input type="text" id="cityLongitude">
             </div>
+            <button onclick="getWeatherDataByLatLong()">get weather Data</button>
           </div>
-          <input type="button" value="get weather Data" onclick="getWeatherDataByLatLong()">
           <div class="weatherReport" id="weatherReportByLatLong">
 
           </div>

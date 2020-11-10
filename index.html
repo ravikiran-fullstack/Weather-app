@@ -41,7 +41,10 @@
           <div>
             <label for="cityNameInput">City Name</label>
             <input type="text" id="cityNameInput">
-            <button onclick="getWeatherDataByName()">get weather Data</button>
+            <div style="display: inline-block;">
+              <button onclick="getWeatherDataByName()">get weather Data</button>
+              <button onclick="resetWeatherReportByName()">Reset</button>
+            </div>
           </div>
           <div class="weatherReport" id="weatherByName">
           </div>
@@ -50,8 +53,11 @@
         <div>
           <div>
             <label for="cityIdInput">City Id</label>
-            <input type="text" id="cityIdInput">
-            <button onclick="getWeatherDataById()">get weather Data</button>
+            <input type="number" id="cityIdInput">
+            <div style="display: inline-block;">
+              <button onclick="getWeatherDataById()">get weather Data</button>
+              <button onclick="resetWeatherReportById()">Reset</button>
+            </div>
           </div>
           <div class="weatherReport" id="weatherById">
 
@@ -68,7 +74,10 @@
               <label for="cityLongitude">Longitude</label>
               <input type="text" id="cityLongitude">
             </div>
-            <button onclick="getWeatherDataByLatLong()">get weather Data</button>
+            <div style="display: inline-block;">
+              <button onclick="getWeatherDataByLatLong()">get weather Data</button>
+              <button onclick="resetWeatherReportByLatLong()">Reset</button>
+            </div>
           </div>
           <div class="weatherReport" id="weatherReportByLatLong">
 

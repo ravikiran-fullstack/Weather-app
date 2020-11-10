@@ -9,8 +9,8 @@ const getWeatherBtn = document.getElementById('getWeatherBtn');
 document.addEventListener("load", function () {});
 
 document.addEventListener("DOMContentLoaded", (event) => {
-  weatherSection.classList = "hideSection";
-  resumeBtn.classList.add('activeTabStyle');
+  resumeSection.classList = "hideSection";
+  showWeatherBtn.classList.add('activeTabStyle');
 });
 
 resumeBtn.addEventListener("click", showResume);

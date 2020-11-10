@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-header {
+.mainHeader {
   text-align: center;
   width: 100%;
   background-color: #dadada;
@@ -63,6 +63,16 @@ header h1 {
 }
 
 /************************************************************ Resume Section Styling Starts *********************************************/
+.resumeHeader{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cacaca;
+  width: 100%;
+  padding: 2px;
+  text-align: center;
+}
+
 
 /************************************************************ Resume Styling Ends ************************************************/
 

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="mainHeader">
     <div>
       <h1>Assignment Day 3</h1>
     </div>
@@ -18,18 +18,47 @@
 
   <section>
     <div class="buttonsTab">
-      <div class="buttonDiv" id="resumeBtn">
-        Show Resume
-      </div>
       <div class="buttonDiv" id="showWeatherBtn">
         Show Weather
+      </div>
+      <div class="buttonDiv" id="resumeBtn">
+        Show Resume
       </div>
     </div>
   </section>
 
   <section id="resumeSection">
     <div class="resumeStyle">
-      <h3>My Resume</h3>
+      <header class="resumeHeader">
+        <div style="padding-top: 20px; font-size: 12px; font-weight:bold;">Phone No:+919513341200</div>
+        <div>
+          <h2>Ravikiran Yadava</h2>
+        </div>
+        <div style="padding-top: 20px; font-size: 12px; font-weight:bold;">ravikiransjce.code@gmail.com</div>
+      </header>
+      <hr>
+      <div >
+        <p>Skills</p>
+        <ul>
+          <li>Web Design with HTML & CSS, Javascript</li>
+        </ul>
+        <p>Education</p>
+        <ul>
+            <li>Masters in EEE</li>
+            <li>Bachelors of Engineering in E&C</li>
+        </ul>
+        <p>Experience</p>
+        <ul>
+          <li>Full stack web development</li>
+        </ul>
+        <br>
+        <p>Interests</p>
+        <ul>
+          <li>Design</li>
+          <li>Programming</li>
+          <li>Gardening</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -68,7 +97,7 @@
           <div>
             <div style="display: inline-block;">
               <label for="cityLatitude">Latitude</label>
-              <input type="text" id="cityLatitude">              
+              <input type="text" id="cityLatitude">
             </div>
             <div style="display: inline-block;">
               <label for="cityLongitude">Longitude</label>
